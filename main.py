@@ -102,7 +102,7 @@ def choice_char_class(char_name: str) -> Character:
     game_classes: dict = {'warrior': Warrior, 'mage': Mage, 'healer': Healer}
     approve_choice: str = ''
     selected_class: str = ''
-    char_class: Character = Character('')  #Заглушка
+    char_class: Character = Character('')  # Заглушка
     while approve_choice != 'y':
         while selected_class not in game_classes:
             selected_class = input('Введи название персонажа, '
